@@ -1,0 +1,90 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+
+
+}
+body{
+    background-color: #262a2f;;
+}
+.container{
+
+    width:500px;
+    padding: 25px 35px;;
+    position: absolute;
+    top:50%;
+    left: 50%;;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border-radius: 10px;
+}
+.container p{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.container input{
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 10px 15px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;
+}
+
+
+#image-box{
+
+    margin-bottom: 20px;
+    width: 200px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease;
+}
+
+#image-box img{
+    width: 100%;
+    padding: 10px;
+}
+
+#image-box.show-img{
+    max-height: 300px;
+    margin: 10px auto;
+    border: 3px solid #d1d1d1;
+
+    
+}
+.btn {
+    color: var(--bs-btn-hover-color);
+    background-color: var(--bs-btn-hover-bg);
+    border-color: var(--bs-btn-hover-border-color);
+    margin-top: 28px;
+}
+
+.error{
+    animation: shake 0.1s linear  10 ;
+
+}
+
+@keyframes shake {
+    0%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    75%{
+ transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+    
+}
